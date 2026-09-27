@@ -1,6 +1,3 @@
-# computer-vision-in-30-days
-My work from the Learn Computer Vision in 30 Days course, using Python and OpenCV.
-
 ## Why
 
 I'm interested in computer vision, but the course I wanted was full and the schedule of the other open section didn't line up with mine, so I'm learning it through this course instead. I went with this free course instead because I figured I could work on it weekly.
