@@ -10,11 +10,17 @@ Each day of the course is a project. This repo holds my code for each one as I w
 
 ## What I Learned
 *I'll update this section each time I work on the course.
+### Colour Detection
+- inRange() makes a mask of the pixels that are inside a certain colour range
+- getbbox makes the bounding box
+- When theres multiple similar colour objects, it merges into one box 
 
 ## How to Run
 
 Install the requirements:
 
+```
 pip install -r requirements.txt
+```
 
 Each project folder has its own instructions for running it.
