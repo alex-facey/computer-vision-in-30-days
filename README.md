@@ -14,6 +14,10 @@ Each day of the course is a project. This repo holds my code for each one as I w
 - inRange() makes a mask of the pixels that are inside a certain colour range
 - getbbox makes the bounding box
 - When theres multiple similar colour objects, it merges into one box 
+### Face Anonymizer
+- MediaPipe's face detector loads a .tflite model and only keeps faces above a confidence threshold
+- One process_img() function handles a single frame, so the same code works for images, videos and the webcam
+- argparse lets you pick the mode from the command line (--mode webcam), otherwise it uses the default
 
 ## How to Run
 

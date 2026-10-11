@@ -217,3 +217,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 OpenCV/data/boat.mp4
+OpenCV/data/testvideo.mp4
+OpenCV/data/faceTest_blurred.mp4
