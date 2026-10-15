@@ -27,4 +27,4 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-Each project folder has its own instructions for running it.
+Each project folder has its own requirement/instructions for running it.
