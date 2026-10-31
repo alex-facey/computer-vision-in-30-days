@@ -22,6 +22,10 @@ Each day of the course is a project. This repo holds my code for each one as I w
 - Compared three OCR tools, Tesseract, EasyOCR, and AWS Textract, on images with short text, using Jaccard similarity (shared words ÷ total unique words) against filename-based ground truth. Tesseract does poorly on photos without preprocessing.
 - Learned the Colab workflow: mounting Google Drive, copying and unzipping data into /content, installing system packages with apt, and moving the notebook in and out of a GitHub repo.
 - Set up AWS for the first time: created an IAM user and access keys, debugged an AccessDeniedException caused by a service control policy on a new Free plan account, and learned to keep keys out of code and git.
+### Image Classification
+- Trained an SVM to classify parking spots as empty or not empty: each image is resized to 15x15 and flattened into a 1D array of pixel values to use as features
+- GridSearchCV tries every combination of gamma and C with 5-fold cross validation and keeps the best model, which got ~100% on the test set
+- Accuracy changes slightly each run because train_test_split shuffles randomly unless you set random_state; saved the trained model with pickle so it doesn't need retraining
 
 ## How to Run
 
