@@ -26,6 +26,12 @@ Each day of the course is a project. This repo holds my code for each one as I w
 - Trained an SVM to classify parking spots as empty or not empty: each image is resized to 15x15 and flattened into a 1D array of pixel values to use as features
 - GridSearchCV tries every combination of gamma and C with 5-fold cross validation and keeps the best model, which got ~100% on the test set
 - Accuracy changes slightly each run because train_test_split shuffles randomly unless you set random_state; saved the trained model with pickle so it doesn't need retraining
+### Image Classification with Feature Extraction
+- Classified weather images (cloudy, rain, shine, sunrise) by using a pretrained ResNet-18 (img2vec_pytorch) as a feature extractor, turning each image into a 512-number vector, then training a Random Forest on those vectors. Got ~94% accuracy on the validation set
+- Split the flat dataset into train/val folders (80/20 per class); the folder names become the labels
+- Some images have 4 channels (RGBA), so they need .convert('RGB') before going into the model
+- Relative paths like ./data depend on the folder you run from, not where the script is; enabled VS Code's "Execute In File Dir" setting to fix it
+- model.p only stores the Random Forest, so infer.py still needs Img2Vec to extract features from new images
 
 ## How to Run
 
