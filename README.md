@@ -32,6 +32,10 @@ Each day of the course is a project. This repo holds my code for each one as I w
 - Some images have 4 channels (RGBA), so they need .convert('RGB') before going into the model
 - Relative paths like ./data depend on the folder you run from, not where the script is; enabled VS Code's "Execute In File Dir" setting to fix it
 - model.p only stores the Random Forest, so infer.py still needs Img2Vec to extract features from new images
+### Emotion Detection
+- Classified faces as happy, sad or surprised by extracting 478 face landmarks with MediaPipe's FaceLandmarker and training a Random Forest on the (x, y, z) coordinates
+- Used the FER-2013 dataset from Kaggle (48x48 images), so had to upscale images before MediaPipe could find faces
+- Webcam faces were small and stretched compared to the Kaggle crops, so the model kept predicting surprised; fixed by normalizing landmarks to pixel coordinates and dividing by face width
 
 ## How to Run
 

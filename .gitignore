@@ -221,3 +221,7 @@ OpenCV/data/testvideo.mp4
 OpenCV/data/faceTest_blurred.mp4
 
 imageClassificationFeatureExtraction/data/
+
+emotionDetection/data/
+emotionDetection/data.txt
+emotionDetection/model
